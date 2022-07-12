@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+  <meta
+    charset="UTF-8"
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>challenge alura/One e-commerce</title>
+  <link rel="icon" href="ahorcado.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/hero.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/prod-page.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/product-list.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="https://github.com/LucasMcantillo"
+          ><img src="assets/img/logo_j&m (1).jpg" alt="logo" class="logo"
+        /></a>
+        <form class="navbar">
+          <input type="search" placeholder="Buscar...." id="search" />
+        </form>
+      </div>
+      <button type="submit" id="login" class="btn-login" onclick="login()">
+        Login
+      </button>
+    </nav>
+  </header>
+
+  <div class="gap"></div>
+
+  <div class="product-active">
+    <img
+      id="prod-img"
+      src="assets/img/Cocinas/Francesca.jpeg"
+      alt="Muebles de cocina"
+      class="featured-active"
+    />
+    <div class="prod-data">
+      <h1 id="prod-title" class="product-title">
+        Cocinas para todos los gustos
+      </h1>
+      <p id="prod-price" class="product-price">$00</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod labore, illum consectetur cumque saepe sapiente pariatur! Perferendis, in quas doloremque suscipit unde porro tempore! Ea quasi natus a at quae?
+      </p>
+    </div>
+  </div>
+
+  <div class="product-category">
+    <div class="product-header">
+      <h1>Productos Similares</h1>
+    </div>
+
+    <div class="product-list">
+      <div class="product">
+        <img
+          src="assets/img/Centros entretenimiento/Imperial.jpg"
+          alt="Centro de entretenimiento"
+          class="featured"
+        />
+        <div>
+          <p class="product-title">Centro de entretenimiento Imperial</p>
+          <p class="product-price">$985.900</p>
+          <form class="product-form" action="product.html" method="GET">
+            <input type="hidden" name="id-prod" value="1" />
+            <input
+              type="hidden"
+              name="id-title"
+              value="Centro de entretenimiento Imperial"
+            />
+            <input type="hidden" name="id-price" value="$699.900" />
+            <input type="hidden" name="id-img" value="assets/img/Centros entretenimiento/Imperial.jpg" />
+            <button class="form-submit">Ver Producto</button>
+          </form>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/img/Baños/Eucalipto.jpeg" alt="mueble de baño" class="featured" />
+        <div>
+          <p class="product-title">Mueble para baño Eucalipto</p>
+          <p class="product-price">$699.900</p>
+          <form class="product-form" action="product.html" method="get">
+            <input type="hidden" name="id-prod" value="2" />
+            <input
+              type="hidden"
+              name="id-title"
+              value="Mueble para baño Eucalipto"
+            />
+            <input type="hidden" name="id-price" value="$699.900" />
+            <input type="hidden" name="id-img" value="assets/img/Baños/Eucalipto.jpeg" />
+            <button class="form-submit">Ver Producto</button>
+          </form>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/img/Baños/Render.jpeg" alt="mueble para baño" class="featured" />
+        <div>
+          <p class="product-title">Mueble para baño Render</p>
+          <p class="product-price">$295.900</p>
+          <form class="product-form" action="product.html" method="get">
+            <input type="hidden" name="id-prod" value="3" />
+            <input
+              type="hidden"
+              name="id-title"
+              value="Mueble para baño Render"
+            />
+            <input type="hidden" name="id-price" value="$295.900" />
+            <input type="hidden" name="id-img" value="assets/img/Baños/Render.jpeg" />
+            <button class="form-submit">Ver Producto</button>
+          </form>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/img/Alcobas/Majdhul.jpg" alt="Alcoba" class="featured" />
+        <div>
+          <p class="product-title">Alcoba Majdhul</p>
+          <p class="product-price">$5.699.900</p>
+          <form class="product-form" action="product.html" method="get">
+            <input type="hidden" name="id-prod" value="4" />
+            <input type="hidden" name="id-title" value="Alcoba Majdhul" />
+            <input type="hidden" name="id-price" value="$5.699.900" />
+            <input type="hidden" name="id-img" value="assets/img/Alcobas/Majdhul.jpg" />
+            <button class="form-submit">Ver Producto</button>
+          </form>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/img/Alcobas/Thamar.jpg" alt="habitacion" class="featured" />
+        <div>
+          <p class="product-title">Alcoba Thamar</p>
+          <p class="product-price">$2.999.900</p>
+          <form class="product-form" action="product.html" method="get">
+            <input type="hidden" name="id-prod" value="5" />
+            <input
+              type="hidden"
+              name="id-title"
+              value="Alcoba Thamar"
+            />
+            <input type="hidden" name="id-price" value="$2.999.900" />
+            <input type="hidden" name="id-img" value="assets/img/Alcobas/Thamar.jpg" />
+            <button class="form-submit">Ver Producto</button>
+          </form>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/img/Cocinas/Encanto.jpg" alt="Cocina" class="featured" />
+        <div>
+          <p class="product-title">Mueble de cocina Encanto</p>
+          <p class="product-price">$999.900</p>
+          <form class="product-form" action="product.html" method="get">
+            <input type="hidden" name="id-prod" value="6" />
+            <input
+              type="hidden"
+              name="id-title"
+              value="Mueble de cocina Encanto"
+            />
+            <input type="hidden" name="id-price" value="$999.900" />
+            <input type="hidden" name="id-img" value="assets/img/Cocinas/Encanto.jpg" />
+            <button class="form-submit">Ver Producto</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-footer">
+    <div class="container">
+      <div class="logo-footer">
+        <a href="https://github.com/LucasMcantillo"
+          ><img src="assets/img/logo_j&m (1).jpg" alt="logo"
+        /></a>
+      </div>
+      <div class="contact-list">
+        <ul>
+          <li><a class="contact-link" href="">Quienes somos</a></li>
+          <li><a class="contact-link" href="">Política de privacidad</a></li>
+          <li><a class="contact-link" href="">Nuestras Tiendas</a></li>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <form
+          action="https://formsubmit.co/12e97499099a1394a1c2fab86aba2eac "
+          method="POST"
+          class="form"
+          id="form"
+          name="form"
+        >
+          <input
+            class="item-6-input"
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre"
+            required=""
+          />
+          <input
+            class="item-6-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail"
+            required=""
+          />
+          <button type="submit" id="enviar" class="submit">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" role="contentinfo">
+    <p class="footer-block"></p>
+    <p class="footer-block">Desarrollado por Lucas Morales 2022 </p>
+    
+  </footer>
+
+  <script src="assets/js/product-redirect.js" type="text/javascript"></script>
+  <script>
+    function login() {
+      var user = prompt("Ingrese nombre de Usuario");
+      var pass = prompt("Ingrese Contraseña");
+      alert("Bienvenido " + user);
+      document.getElementById("login").innerHTML = "Cerrar sesion";
+    }
+  </script>
+</body>
